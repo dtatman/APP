@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvBudgetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên ngân sách"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvBudgetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số tiền: 0.0"
+        android:textSize="16sp"
+        android:textColor="#65FF00" />
+
+    <TextView
+        android:id="@+id/tvBudgetUsed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đã sử dụng: 0.0"
+        android:textSize="16sp"
+        android:textColor="#12FF00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/btnEditBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chỉnh sửa"
+            android:backgroundTint="#5BB4A5"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Xóa"
+            android:backgroundTint="#FF0000"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Tên ngân sách -->
+    <TextView
+        android:id="@+id/tvBudgetNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tên Ngân Sách:"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etBudgetName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên ngân sách"
+        app:layout_constraintTop_toBottomOf="@id/tvBudgetNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Số tiền ngân sách -->
+    <TextView
+        android:id="@+id/tvBudgetAmountLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Số Tiền:"
+        app:layout_constraintTop_toBottomOf="@id/etBudgetName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etBudgetAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/tvBudgetAmountLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
